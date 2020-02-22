@@ -1,3 +1,8 @@
+A React hangman game exercise from udemy coruse by Colt Steele. 
+# main goal of the exercise
+-Fix bugs
+-Add new features to existing code
+__________________________________________________________________________________________________
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
