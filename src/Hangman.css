@@ -17,6 +17,9 @@
   margin-bottom: 0.1em;
   margin-top: 0;
 }
+.Hangman h3 {
+  margin: 0 10px 10px 0;
+}
 
 .Hangman-word {
   letter-spacing: 1em;
