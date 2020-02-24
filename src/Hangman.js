@@ -14,7 +14,6 @@ class Hangman extends Component {
     maxWrong: 6,
     images: [img0, img1, img2, img3, img4, img5, img6]
   };
-
   constructor(props) {
     super(props);
     this.state = { nWrong: 0, guessed: new Set(), answer: "apple" };
@@ -46,6 +45,7 @@ class Hangman extends Component {
   generateButtons() {
     return "abcdefghijklmnopqrstuvwxyz".split("").map(ltr => (
       <button
+          key={ltr}
         value={ltr}
         onClick={this.handleGuess}
         disabled={this.state.guessed.has(ltr)}
