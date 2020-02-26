@@ -33,8 +33,7 @@
   width: 250px;
   margin-top: 0;
 }
-
-.Hangman button {
+.Hangman-btns button {
   border: none;
   font-family: inherit;
   font-size: 1rem;
@@ -49,7 +48,6 @@
   border-radius: 5px;
   padding-top: 4px;
 }
-
 .Hangman button:hover {
   background-color: #ff9800;
 }
@@ -58,4 +56,22 @@
   background: #bdbdbd;
   color: #eeeeee;
   box-shadow: 0 6px #9e9e9e;
+}
+.Hangman .Playagain-btn {
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  margin-left: 2em;
+  background-color: #ffc107;
+}
+
+.Hangman-btns .Playagain-btn {
+  width: 10em;
+  margin: 10px 0;
+}
+.Hangman .Hangman-Loose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
