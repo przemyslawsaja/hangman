@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Hangman.css";
+import {randomWord} from "./words";
 import img0 from "./0.jpg";
 import img1 from "./1.jpg";
 import img2 from "./2.jpg";
@@ -14,11 +15,7 @@ class Hangman extends Component {
     maxWrong: 6,
     images: [img0, img1, img2, img3, img4, img5, img6]
   };
-  constructor(props) {
-    super(props);
-    this.state = { nWrong: 0, guessed: new Set(), answer: "apple" };
-    this.handleGuess = this.handleGuess.bind(this);
-  }
+  state = {nWrong: 0, guessed: new Set(), answer: randomWord()};
 
   /** guessedWord: show current-state of word:
     if guessed letters are {a,p,e}, show "app_e" for "apple"
@@ -33,7 +30,7 @@ class Hangman extends Component {
     - add to guessed letters
     - if not in answer, increase number-wrong guesses
   */
-  handleGuess(evt) {
+  handleGuess = (evt) => {
     let ltr = evt.target.value;
     this.setState(st => ({
       guessed: st.guessed.add(ltr),
@@ -54,10 +51,11 @@ class Hangman extends Component {
       </button>
     ));
   }
-  /** Restart game setting to default */
+  /** Restart game setting to default and roll new answer */
 
   Restart = () => {
     this.setState({
+      answer: randomWord(),
       nWrong: 0,
       guessed: new Set()
     })
