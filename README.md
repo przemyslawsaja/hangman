@@ -1,9 +1,19 @@
-A React hangman game exercise from udemy coruse by Colt Steele. 
-# main goal of the exercise
-/ Fix bugs
-/ Add new features to existing code
-__________________________________________________________________________________________________
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ ## Project title 
+A React hangman game exercise from udemy coruse by Colt Steele.
+
+## Game Rules
+Hangman is a simple word guessing game. Players try to figure out an unknown word by guessing letters. If too many letters which do not appear in the word are guessed, the player is hanged (and loses).
+
+## Main goal of the exercise
+ - Working with existing code
+ - Fix bugs
+ - Add new features
+
+## Screenshots
+<img src="images/Hangman_ss2.png" with="400" height="400">
+<img src="images/Hangman_ss3.png" with="400" height="400">
+<img src="images/Hangman_ss4.png" with="400" height="400">
+
 
 ## Available Scripts
 
